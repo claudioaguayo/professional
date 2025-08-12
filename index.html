@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Claudio Aguayo‑Bórquez | Spanish & Latin American Studies</title>
+  <meta name="description" content="Academic website for Claudio Aguayo‑Bórquez: research, publications, teaching, and blog." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0d10;     /* deep graphite */
+      --panel:#111418;  /* card bg */
+      --text:#eaeef3;   /* primary text */
+      --muted:#aab4c0;  /* secondary text */
+      --accent:#8bd3ff; /* link + accents */
+      --accent2:#bfffa1;/* subtle accent */
+      --max:1100px;
+      --radius:18px;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:linear-gradient(180deg,#0b0d10, #0f1318 40%, #0b0d10 100%);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:var(--max);margin:0 auto;padding:28px}
+    header{position:sticky;top:0;background:rgba(11,13,16,.8);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid #1b2129;z-index:10}
+    nav{display:flex;gap:18px;align-items:center;justify-content:space-between}
+    nav .brand{font-weight:800;letter-spacing:.3px}
+    nav .links a{margin:0 10px;color:var(--muted)}
+    nav .links a.active, nav .links a:hover{color:var(--text)}
+
+    .hero{margin-top:28px}
+    .hero .card{background:radial-gradient(1200px 400px at 20% -20%, rgba(139,211,255,.15), transparent 60%), var(--panel);border:1px solid #1c2330;border-radius:var(--radius);padding:36px;box-shadow:var(--shadow)}
+    .hero h1{font-size:clamp(28px, 3vw + 16px, 48px);line-height:1.1;margin:0 0 12px}
+    .hero p.lead{color:var(--muted);font-size:1.05rem;margin:.25rem 0 1rem}
+    .chips{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}
+    .chip{background:#0f1420;border:1px solid #1d2a3a;color:#dbe7ff;padding:8px 12px;border-radius:999px;font-size:.85rem}
+    .btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:12px}
+    .btn{display:inline-block;background:var(--accent);color:#062236;font-weight:700;padding:12px 16px;border-radius:12px;box-shadow:0 6px 18px rgba(139,211,255,.35);transition:.2s transform}
+    .btn:hover{transform:translateY(-2px);text-decoration:none}
+    .btn.ghost{background:transparent;border:1px solid #29465f;color:var(--text);box-shadow:none}
+
+    section{margin:40px 0}
+    .section-card{background:var(--panel);border:1px solid #1b2129;border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+    .section-title{font-size:1.2rem;letter-spacing:.3px;margin:0 0 6px}
+    .section-sub{color:var(--muted);margin:0 0 16px}
+
+    .grid{display:grid;grid-template-columns:1fr;gap:16px}
+    @media (min-width: 900px){
+      .grid{grid-template-columns:repeat(2, 1fr)}
+    }
+
+    .pub{padding:14px 16px;border:1px solid #202734;border-radius:14px;background:#0d1117}
+    .pub small{color:var(--muted)}
+    .pub .title{font-weight:600}
+
+    .teaching .course{padding:14px;border:1px solid #222a36;border-radius:14px}
+
+    .blog .post{padding:16px;border:1px solid #222a36;border-radius:14px}
+    .post time{color:var(--muted);font-size:.9rem}
+
+    footer{margin:60px 0 40px;color:var(--muted);text-align:center}
+    .social{display:flex;justify-content:center;gap:14px;margin-top:10px}
+    .kbd{border:1px solid #2b3646;background:#0e1520;border-radius:8px;padding:3px 8px;color:#cfe7ff;font-size:.85rem}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <div class="brand">Claudio Aguayo‑Bórquez</div>
+        <div class="links">
+          <a href="#about" class="active">About</a>
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#teaching">Teaching</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" id="about">
+      <div class="card">
+        <h1>Spanish & Latin American Studies</h1>
+        <p class="lead">Environmental humanities · Frontiers & extractivism · Marxist criticism · Southern Cone</p>
+        <div class="chips">
+          <span class="chip">Book project: <strong>Capital’s Wilderness</strong></span>
+          <span class="chip">FHSU · Assistant Professor</span>
+          <span class="chip">Syllabi · Essays · Talks</span>
+        </div>
+        <div class="btns">
+          <a class="btn" href="#publications">See publications</a>
+          <a class="btn ghost" href="#blog">Read the blog</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="research">
+      <div class="section-card">
+        <h2 class="section-title">Research Interests</h2>
+        <p class="section-sub">I work at the intersection of environmental humanities and Latin American literature, focusing on frontier imaginaries, landscape fetishization, and political economy.</p>
+        <div class="grid">
+          <div class="teaser section-card" style="padding:16px">
+            <h3 style="margin-top:0">Capital’s Wilderness (monograph)</h3>
+            <p>Critique of aesthetic mediation and class analysis through wilderness and frontier myths across the Americas. <a href="#">Proposal & chapter outline (PDF)</a></p>
+          </div>
+          <div class="teaser section-card" style="padding:16px">
+            <h3 style="margin-top:0">Articles & Works in Progress</h3>
+            <ul>
+              <li>“Sarmiento’s Romanticism and the Politics of Barbarism” (forthcoming)</li>
+              <li>“Oceanic Capital: Maritime Frontiers from Melville to Coloane” (in draft)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications">
+      <div class="section-card">
+        <h2 class="section-title">Publications & Selected Writing</h2>
+        <p class="section-sub">A short selection; link to full CV below.</p>
+        <div class="grid">
+          <article class="pub">
+            <div class="title">Mediations article (July 2025): Chapter 7 basis</div>
+            <small>Journal article · 2025 · <a href="#">PDF</a></small>
+          </article>
+          <article class="pub">
+            <div class="title">On the Fetishization of Landscape in Latin American Literature</div>
+            <small>Book chapter (forthcoming) · <a href="#">Abstract</a></small>
+          </article>
+          <article class="pub">
+            <div class="title">Teaching dossier: Latin American Civilization</div>
+            <small>Open syllabus · <a href="#">View materials</a></small>
+          </article>
+          <article class="pub">
+            <div class="title">Talk: Interior Frontiers and the Politics of Experience</div>
+            <small>Conference talk · Slides: <a href="#">PDF</a></small>
+          </article>
+        </div>
+        <p style="margin-top:16px"><a href="#">Download full CV (PDF)</a></p>
+      </div>
+    </section>
+
+    <section id="teaching" class="teaching">
+      <div class="section-card">
+        <h2 class="section-title">Teaching</h2>
+        <p class="section-sub">Undergraduate courses in Spanish language and Latin American literature/civilization.</p>
+        <div class="grid">
+          <div class="course">
+            <strong>SPAN 121 – Latin American Civilization</strong>
+            <div>Themes: Prehispanic civilizations, conquest, national formations, modernism, social movements.</div>
+            <div><a href="#">Syllabus</a> · <a href="#">Assignments</a></div>
+          </div>
+          <div class="course">
+            <strong>Spanish I & II</strong>
+            <div>Communicative approach, culture-driven vocabulary, reflective video discussion boards.</div>
+            <div><a href="#">Sample module</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="blog">
+      <div class="section-card">
+        <h2 class="section-title">Blog</h2>
+        <p class="section-sub">Short notes and in‑progress ideas; citations and longer essays go to the Publications section.</p>
+        <article class="post">
+          <h3 style="margin-top:0">On the middle‑class novel and neoliberal experience</h3>
+          <time datetime="2025-08-12">August 12, 2025</time>
+          <p>Why “experience” became the false universal of late‑capitalist criticism, with notes on Donoso and Ehrenreich’s PMC thesis.</p>
+          <a href="#">Read more</a>
+        </article>
+        <article class="post">
+          <h3 style="margin-top:0">Frontier afterlives in the Southern Cone</h3>
+          <time datetime="2025-07-29">July 29, 2025</time>
+          <p>Interior frontiers, extractivism, and the uncanny landscape from Sarmiento to Bolaño.</p>
+          <a href="#">Read more</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-card">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-sub">Best for collaboration inquiries, talks, and student meetings.</p>
+        <ul>
+          <li>Email: <a href="mailto:yourname@university.edu">yourname@university.edu</a></li>
+          <li>Office hours: Tue/Thu 2–4 PM (CT) · Zoom upon request</li>
+          <li>Elsewhere: <a href="#">Google Scholar</a> · <a href="#">ORCID</a> · <a href="#">Academia</a></li>
+        </ul>
+        <p><span class="kbd">Tip</span> Put PDFs in a <code>/files</code> folder and link them above.</p>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="year"></span> Claudio Aguayo‑Bórquez · Built with plain HTML + a touch of CSS</div>
+      <div class="social">
+        <a href="#">LinkedIn</a>
+        <a href="#">X/Twitter</a>
+        <a href="#">GitHub</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
