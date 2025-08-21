@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Capital’s Wilderness — Project Timeline (Aug 2025–Aug 2026)</title>
+  <style>
+    :root{
+      --bg:#0f172a;          /* slate-900 */
+      --panel:#111827;       /* gray-900 */
+      --card:#0b1222;        /* custom deep navy */
+      --muted:#94a3b8;       /* slate-400 */
+      --text:#e5e7eb;        /* gray-200 */
+      --accent:#38bdf8;      /* sky-400 */
+      --accent-2:#22d3ee;    /* cyan-400 */
+      --ok:#34d399;          /* green-400 */
+      --warn:#f59e0b;        /* amber-500 */
+      --danger:#fb7185;      /* rose-400 */
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 16px;
+    }
+    html,body{height:100%;}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      color:var(--text); background: radial-gradient(1200px 800px at 80% -20%, #0ea5e91a, transparent),
+                 radial-gradient(1000px 700px at -10% -10%, #22d3ee10, transparent), var(--bg);
+    }
+    header{
+      position:sticky; top:0; z-index:50; backdrop-filter: blur(8px);
+      background: linear-gradient(90deg, #0ea5e94d, #22d3ee33) ;
+      border-bottom: 1px solid #22d3ee33; box-shadow: var(--shadow);
+    }
+    .wrap{max-width:1150px; margin:0 auto; padding: 18px 20px;}
+    .title{display:flex; align-items:center; gap:16px;}
+    .title h1{margin:0; font-size: clamp(20px, 4vw, 30px); letter-spacing:.3px;}
+    .badge{font-size:12px; padding:6px 10px; border-radius:999px; border:1px solid #22d3ee55; color:#cffafe; background:#0ea5e91a}
+
+    nav{display:flex; flex-wrap:wrap; gap:10px; margin-top:10px}
+    nav a{color:#a5f3fc; text-decoration:none; font-size:14px; padding:6px 10px; border-radius:10px; border:1px solid #22d3ee33}
+    nav a:hover{background:#22d3ee1a}
+
+    main{max-width:1150px; margin:28px auto; padding: 0 20px 50px;}
+    section{margin: 28px 0 22px}
+    .section-head{display:flex; align-items:end; justify-content:space-between; gap:14px;}
+    .section-head h2{margin:0; font-size: clamp(18px, 3vw, 26px)}
+    .range{color:var(--muted); font-size:14px}
+
+    .grid{display:grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap:16px}
+    .card{
+      background: linear-gradient(180deg, #0b1222, #0a1020);
+      border:1px solid #1f2937;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding:16px 16px 14px;
+    }
+    .card h3{margin:4px 0 8px; font-size: clamp(15px,2.2vw,18px)}
+    .card p{margin:6px 0 0; color:var(--muted);}
+
+    .tasks{display:flex; flex-direction:column; gap:8px; margin:10px 0 0}
+    .task{display:flex; align-items:flex-start; gap:10px; background:#0b1222; border:1px dashed #334155; border-radius:12px; padding:10px}
+    .task label{cursor:pointer; line-height:1.4}
+
+    .deliverable{
+      margin-top:10px; padding:10px; border-radius:12px; border:1px solid #22c55e33; background:#052e20; color:#bbf7d0
+    }
+    .deliverable b{color:#86efac}
+
+    .progress{
+      position:sticky; bottom:14px; left:0; right:0; margin: 28px auto 0; max-width: 1150px; background:#0b1222; border:1px solid #1f2937; border-radius:14px; padding:10px 14px;
+      box-shadow: var(--shadow);
+    }
+    .bar{height:10px; border-radius:999px; background:#0b1222; border:1px solid #334155; overflow:hidden}
+    .bar>span{display:block; height:100%; width:0; background: linear-gradient(90deg, var(--accent), var(--accent-2)); transition: width .4s ease}
+    .bar-text{display:flex; align-items:center; justify-content:space-between; color:var(--muted); font-size:12.5px; margin-top:8px}
+
+    footer{max-width:1150px; margin:30px auto 60px; padding:0 20px; color:var(--muted); font-size:13px}
+
+    /* Print */
+    @media print{
+      header, .progress { display:none !important; }
+      body{background:#fff; color:#000}
+      .card{break-inside: avoid; border-color:#ddd; background:#fff; box-shadow:none}
+      .deliverable{background:#f6fff9; color:#064e3b; border-color:#bbf7d0}
+      nav{display:none}
+      .wrap, main, footer{max-width: 960px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="title">
+        <h1>Capital’s Wilderness — Project Timeline</h1>
+        <span class="badge">Aug 2025 → Aug 2026</span>
+      </div>
+      <nav aria-label="Sections">
+        <a href="#fall">Fall 2025</a>
+        <a href="#break">Winter Break 2025–26</a>
+        <a href="#spring">Spring 2026</a>
+        <a href="#framing">Late Spring 2026</a>
+        <a href="#summer">Summer 2026</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- FALL 2025 -->
+    <section id="fall">
+      <div class="section-head">
+        <h2>Fall 2025 — Reading & Drafting Foundations</h2>
+        <div class="range">Aug 20 – Dec 20, 2025</div>
+      </div>
+
+      <div class="grid">
+        <!-- Aug 20–Sep 30 -->
+        <div class="card">
+          <h3>Aug 20 – Sep 30 · Reading & Recharge</h3>
+          <div class="tasks">
+            <div class="task"><input id="t1" type="checkbox"><label for="t1"><b>Aug 20–24:</b> Finish McCarthy’s <i>Outer Dark</i> (2–3 pp notes).</label></div>
+            <div class="task"><input id="t2" type="checkbox"><label for="t2"><b>Aug 25–31:</b> Williams, <i>The Country and the City</i>, ch. 1–4; start Lugones, <i>El payador</i>.</label></div>
+            <div class="task"><input id="t3" type="checkbox"><label for="t3"><b>Sep 1–7:</b> Williams ch. 5–7; finish <i>El payador</i>.</label></div>
+            <div class="task"><input id="t4" type="checkbox"><label for="t4"><b>Sep 8–14:</b> Williams ch. 8–10; write Lugones memo (2–3 pp).</label></div>
+            <div class="task"><input id="t5" type="checkbox"><label for="t5"><b>Sep 15–21:</b> Williams ch. 11–13; begin Rosa Luxemburg skim.</label></div>
+            <div class="task"><input id="t6" type="checkbox"><label for="t6"><b>Sep 22–30:</b> Finish Williams; skim Chilean frontier historian; compile quotes.</label></div>
+          </div>
+          <div class="deliverable">📌 <b>Sep 30 Deliverable:</b> 10‑page annotated memo (Williams + Lugones + Luxemburg + Chilean frontier).</div>
+        </div>
+
+        <!-- Oct 1–Nov 15 -->
+        <div class="card">
+          <h3>Oct 1 – Nov 15 · Part I: Land & Sea</h3>
+          <div class="tasks">
+            <div class="task"><input id="t7" type="checkbox"><label for="t7"><b>Oct 1–7:</b> Re‑outline Part I using <i>Land & Sea (corrected)</i> + BLAR piece.</label></div>
+            <div class="task"><input id="t8" type="checkbox"><label for="t8"><b>Oct 8–21:</b> Draft 15–20 pp (maritime capitalism; proletarian menace; enclosure vs circulation).</label></div>
+            <div class="task"><input id="t9" type="checkbox"><label for="t9"><b>Oct 22–31:</b> Draft final 10–15 pp of Part I.</label></div>
+            <div class="task"><input id="t10" type="checkbox"><label for="t10"><b>Nov 1–7:</b> Revise Part I draft.</label></div>
+            <div class="task"><input id="t11" type="checkbox"><label for="t11"><b>Nov 8–15:</b> Final polish; integrate Chilean frontier notes.</label></div>
+          </div>
+          <div class="deliverable">📌 <b>Nov 15 Deliverable:</b> Part I finished (~35 pp).</div>
+        </div>
+
+        <!-- Nov 16–Dec 20 -->
+        <div class="card">
+          <h3>Nov 16 – Dec 20 · Part II: Interior Frontiers (Rough)</h3>
+          <div class="tasks">
+            <div class="task"><input id="t12" type="checkbox"><label for="t12"><b>Nov 16–23:</b> Pampas focus (Lugones + Güiraldes + Martínez Estrada).</label></div>
+            <div class="task"><input id="t13" type="checkbox"><label for="t13"><b>Nov 24–30:</b> Plains comparison (Cather + Williams).</label></div>
+            <div class="task"><input id="t14" type="checkbox"><label for="t14"><b>Dec 1–10:</b> Fascist agrarianism framework (Herf, Sternhell; begin <i>I’ll Take My Stand</i> skim).</label></div>
+            <div class="task"><input id="t15" type="checkbox"><label for="t15"><b>Dec 11–20:</b> Integrate into rough draft (40–50 pp).</label></div>
+          </div>
+          <div class="deliverable">📌 <b>Dec 20 Deliverable:</b> Rough Part II draft (40–50 pp).</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WINTER BREAK -->
+    <section id="break">
+      <div class="section-head">
+        <h2>Winter Break 2025–26 — Southern Agrarianism & Faulkner</h2>
+        <div class="range">Dec 21, 2025 – Jan 15, 2026</div>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <h3>Dec 21 – Jan 1 · The Twelve Southerners</h3>
+          <div class="tasks">
+            <div class="task"><input id="t16" type="checkbox"><label for="t16">Skim key essays in <i>I’ll Take My Stand</i> (Ransom, Davidson, Tate); 3–4 pp memo.</label></div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Jan 2 – Jan 15 · Faulkner Focus</h3>
+          <div class="tasks">
+            <div class="task"><input id="t17" type="checkbox"><label for="t17"><i>Absalom, Absalom!</i> (focus: Sutpen’s Hundred; land/lineage; racial violence).</label></div>
+            <div class="task"><input id="t18" type="checkbox"><label for="t18">Skim <i>The Hamlet</i> (Snopes; land speculation; agrarian myth → capitalism).</label></div>
+          </div>
+          <div class="deliverable">📌 <b>Jan 15 Deliverable:</b> 10‑page memo “Southern Agrarianism and the Fetish of the Land.” Revise Part II to 70–80 pp.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPRING 2026 -->
+    <section id="spring">
+      <div class="section-head">
+        <h2>Spring 2026 — Part III: Contemporary Crossings</h2>
+        <div class="range">Jan 16 – Apr 15, 2026</div>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <h3>Jan 16 – Feb 15 · Eco‑Romanticism & Moralizing Nature</h3>
+          <p>Base: <i>Against Moralizing Nature</i> (corrected). Target: 25–30 pp.</p>
+          <div class="tasks">
+            <div class="task"><input id="t19" type="checkbox"><label for="t19">Draft chapter: Latour, new materialisms, ecocriticism; tie to metabolic rift.</label></div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Feb 16 – Mar 15 · Middle‑Class Novel & Reproduction</h3>
+          <p>Base: <i>Mediations</i> essay + Middle‑Class Novel ms. Target: ~25 pp.</p>
+          <div class="tasks">
+            <div class="task"><input id="t20" type="checkbox"><label for="t20">Draft chapter: PMC critique; aesthetics reproducing capital.</label></div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Mar 16 – Apr 15 · Contemporary Crossings</h3>
+          <p>Musk/Dugin; Cabezón Cámara; Catrileo; Bazterrica; Bolaño; Donoso. Target: 35–40 pp.</p>
+          <div class="tasks">
+            <div class="task"><input id="t21" type="checkbox"><label for="t21">Draft chapter: reactivation of frontier/wilderness myths under (post)‑neoliberalism.</label></div>
+          </div>
+          <div class="deliverable">📌 <b>Apr 15 Deliverable:</b> Drafts of all 3 Part III chapters.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LATE SPRING / FRAMING -->
+    <section id="framing">
+      <div class="section-head">
+        <h2>Late Spring 2026 — Framing the Book</h2>
+        <div class="range">Apr 16 – May 15, 2026</div>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <h3>Apr 16 – May 1 · Epilogue</h3>
+          <div class="tasks">
+            <div class="task"><input id="t22" type="checkbox"><label for="t22">Write Epilogue (Dialectics of Nature & Terror) — ~20 pp.</label></div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>May 2 – May 15 · Introduction</h3>
+          <div class="tasks">
+            <div class="task"><input id="t23" type="checkbox"><label for="t23">Write Introduction last (state problem; debates; scope) — ~25 pp.</label></div>
+          </div>
+          <div class="deliverable">📌 <b>May 15 Deliverable:</b> Complete manuscript draft (~95k words).</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUMMER -->
+    <section id="summer">
+      <div class="section-head">
+        <h2>Summer 2026 — Revisions & Submission</h2>
+        <div class="range">May 16 – Aug 1, 2026</div>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <h3>May 16 – Jun 15 · Revision Pass #1 (Macro)</h3>
+          <div class="tasks">
+            <div class="task"><input id="t24" type="checkbox"><label for="t24">Argument flow; remove repetition; add signposts across parts.</label></div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Jun 16 – Jul 10 · Revision Pass #2 (Micro)</h3>
+          <div class="tasks">
+            <div class="task"><input id="t25" type="checkbox"><label for="t25">Style; footnotes; bibliography; captions; consistency.</label></div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Jul 11 – Jul 21 · Mop‑Up</h3>
+          <div class="tasks">
+            <div class="task"><input id="t26" type="checkbox"><label for="t26">Permissions; figures; plug research gaps flagged earlier.</label></div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Jul 22 – Jul 31 · Final Polish & Submission Package</h3>
+          <div class="tasks">
+            <div class="task"><input id="t27" type="checkbox"><label for="t27">Proof; export PDFs; finalize proposal + sample chapter; prepare submission.</label></div>
+          </div>
+          <div class="deliverable">📌 <b>Aug 1 Deliverable:</b> Submit manuscript to target press.</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="progress" aria-live="polite">
+      <div class="bar" aria-label="Overall progress"><span id="bar"></span></div>
+      <div class="bar-text"><span id="pct">0% complete</span><span id="doneCount">0 of 27 tasks</span></div>
+    </div>
+  </main>
+
+  <footer>
+    <p><strong>Tip:</strong> Checkboxes are saved to your browser (local only). You can print this page or publish it as a static HTML anywhere (GitHub Pages, your website, or a file share).</p>
+  </footer>
+
+  <script>
+    // Persist task state to localStorage and update progress bar
+    const tasks = Array.from(document.querySelectorAll('.task input[type="checkbox"]'));
+    const bar = document.getElementById('bar');
+    const pct = document.getElementById('pct');
+    const doneCount = document.getElementById('doneCount');
+
+    const KEY = 'capitals-wilderness-timeline-v1';
+    const saved = JSON.parse(localStorage.getItem(KEY) || '{}');
+
+    tasks.forEach(cb => {
+      if (saved[cb.id]) cb.checked = true;
+      cb.addEventListener('change', () => {
+        saved[cb.id] = cb.checked;
+        localStorage.setItem(KEY, JSON.stringify(saved));
+        render();
+      });
+    });
+
+    function render(){
+      const total = tasks.length;
+      const done = tasks.filter(t => t.checked).length;
+      const percent = Math.round((done/total)*100);
+      bar.style.width = percent + '%';
+      pct.textContent = percent + '% complete';
+      doneCount.textContent = `${done} of ${total} tasks`;
+    }
+
+    render();
+  </script>
+</body>
+</html>
